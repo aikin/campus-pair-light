@@ -361,42 +361,6 @@ a:focus {
   background-size: 50%;
   background-position: 50% 15%; }
 
-.book-refactor-background {
-  background: no-repeat;
-  background-image: url("../../images/books/book-refactor.png");
-  background-size: 60%;
-  background-position: 50% 50%; }
-
-.book-js-background {
-  background: no-repeat;
-  background-image: url("../../images/books/book-js.png");
-  background-size: 60%;
-  background-position: 50% 50%; }
-
-.book-lean-background {
-  background: no-repeat;
-  background-image: url("../../images/books/book-lean.png");
-  background-size: 60%;
-  background-position: 50% 50%; }
-
-.book-measurement-background {
-  background: no-repeat;
-  background-image: url("../../images/books/book-measurement.png");
-  background-size: 60%;
-  background-position: 50% 50%; }
-
-.book-anthology-background {
-  background: no-repeat;
-  background-image: url("../../images/books/book-anthology.png");
-  background-size: 60%;
-  background-position: 50% 50%; }
-
-.book-mobile-background {
-  background: no-repeat;
-  background-image: url("../../images/books/book-mobile.png");
-  background-size: 60%;
-  background-position: 50% 50%; }
-
 .p1-background {
   background: no-repeat;
   background-image: url("../../images/p1.png");
