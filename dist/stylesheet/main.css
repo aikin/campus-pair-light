@@ -1,0 +1,481 @@
+.text-white {
+  color: white; }
+
+.text-huge {
+  font-size: 35px; }
+
+.text-large {
+  font-size: 30px; }
+
+.text-medium {
+  font-size: 25px; }
+
+.text-small {
+  font-size: 20px; }
+
+.text-litte {
+  font-size: 18px; }
+
+.text-tiny {
+  font-size: 15px; }
+
+.text-float-up {
+  position: relative;
+  bottom: 12px; }
+
+body {
+  background-color: white;
+  font-family: STHeiTi, SimHei; }
+
+.bodyWrapper {
+  background-color: white;
+  min-width: 715px;
+  max-width: 1440px;
+  margin: 0 auto;
+  line-height: 180%; }
+
+a {
+  text-decoration: none; }
+
+.navBar {
+  height: 40px;
+  padding-top: 15px;
+  background-color: white;
+  position: fixed;
+  width: 100%; }
+
+.container-navBar-item {
+  float: right;
+  margin-right: 5%; }
+
+.navBar-normalItem {
+  display: inline-block;
+  width: 105px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #8e8e8e; }
+
+.navBar-normalItem:hover {
+  transition-duration: 0.2s;
+  opacity: 0.9; }
+
+.navBar-purpleFramedItem {
+  display: inline-block;
+  width: 105px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #CB6B93;
+  border: solid 1px #CB6B93; }
+
+.navBar-purpleFramedItem:hover {
+  transition-duration: 0.2s;
+  color: white;
+  background-color: #CB6B93; }
+
+.tinySection {
+  padding-top: 1px;
+  margin-top: -1px;
+  background-repeat: no-repeat;
+  height: 280px; }
+
+.smallSection {
+  padding-top: 1px;
+  margin-top: -1px;
+  background-repeat: no-repeat;
+  height: 600px; }
+
+.mediumSection {
+  padding-top: 1px;
+  margin-top: -1px;
+  background-repeat: no-repeat;
+  height: 700px; }
+
+.bigSection {
+  padding-top: 1px;
+  margin-top: -1px;
+  background-repeat: no-repeat;
+  height: 800px; }
+
+.hugeSection {
+  padding-top: 1px;
+  margin-top: -1px;
+  background-repeat: no-repeat;
+  height: 1300px; }
+
+.pair-programming-background {
+  background-size: contain;
+  background-image: url("../../images/the-game-of-pair.png");
+  background-position: 55% 50%; }
+
+.sign-up-background {
+  background-size: cover;
+  background-image: url("../../images/sign-up.png");
+  background-position: 0 45%; }
+
+.company-thoughtworks-background {
+  background-size: cover;
+  background-image: url("../../images/company-thoughtworks.png");
+  background-position: 45% 60%; }
+
+.company-thoughtworks-narrowBackground {
+  background-size: cover;
+  background-image: url("../../images/company-thoughtworks.png");
+  background-position: 45% 75%; }
+
+.activity-process-background {
+  background-color: #0AB0C5; }
+
+.city-sign-up-background {
+  background-color: #A9084D; }
+
+.leadership-pride-background {
+  background-color: #A9084D; }
+
+@media (max-width: 1100px) {
+  .pair-programming-background {
+    background-size: 150%; } }
+.section-subsection {
+  width: 100%;
+  height: 100%; }
+
+.section-subsection-left {
+  vertical-align: top;
+  width: 40%;
+  padding-left: 130px; }
+
+.section-subsection-right {
+  vertical-align: top;
+  width: 60%; }
+
+.section-mediumPicture {
+  background: no-repeat;
+  background-size: contain;
+  background-position-x: 52%;
+  height: 130px; }
+
+.section-bigPicture {
+  background: no-repeat;
+  background-size: contain;
+  background-position-x: 52%;
+  height: 200px; }
+
+.thoughtworks-elements-background {
+  background-image: url("../../images/thoughtworks-elements.png"); }
+
+.thoughtworks-logo-background {
+  background-image: url("../../images/thoughtworks-logo.png"); }
+
+.team-member1-background {
+  background-image: url("../../images/team-member.png"); }
+
+.team-member2-background {
+  background-image: url("../../images/team-member2.png"); }
+
+.section-entry {
+  height: 200px;
+  width: 100%; }
+
+.section-entry-icon {
+  width: 30%; }
+
+.section-entry-icon-caption {
+  float: right;
+  width: 200px;
+  text-align: center; }
+
+.section-entry-text {
+  width: 80%;
+  padding-left: 40px; }
+
+.section-entry-text-content {
+  width: 75%; }
+
+.activity-one-icon {
+  background: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+  background-image: url("../../images/activity-one.png"); }
+
+.activity-two-icon {
+  background: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+  background-image: url("../../images/activity-two.png"); }
+
+.activity-three-icon {
+  background: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+  background-image: url("../../images/activity-three.png"); }
+
+.activity-four-icon {
+  background: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+  background-image: url("../../images/activity-four.png"); }
+
+.activity-five-icon {
+  background: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+  background-image: url("../../images/activity-five.png"); }
+
+@media (max-width: 1200px) {
+  .section-entry-icon {
+    width: 100%;
+    display: block;
+    height: 190px; }
+
+  .section-entry-text {
+    width: auto;
+    display: block;
+    padding-left: 80px;
+    padding-right: 80px; }
+
+  .section-entry-icon-caption {
+    float: none;
+    width: 5%;
+    height: 190px;
+    display: table-cell;
+    vertical-align: middle; }
+
+  .activity-one-icon, .activity-two-icon, .activity-three-icon, .activity-four-icon, .activity-five-icon {
+    background-position: 50% 0; }
+
+  .section-entry-text-content {
+    width: 100%; } }
+.section-largeEntry {
+  height: 300px;
+  width: 100%; }
+
+.section-largeEntry-icon {
+  width: 48%; }
+
+.section-largeEntry-icon-img {
+  float: right; }
+
+.section-largeEntry-text {
+  width: 52%;
+  padding-left: 7%; }
+
+@media (max-width: 1200px) {
+  .section-largeEntry-icon {
+    display: block;
+    width: 100%; }
+
+  .section-largeEntry-icon-img {
+    float: none;
+    width: 100%; }
+
+  .section-largeEntry-text {
+    display: block;
+    width: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 40px; }
+
+  .section-largeEntry-text {
+    padding-top: 60px; } }
+@media (max-width: 1050px) {
+  .section-largeEntry-text {
+    padding-top: 120px; } }
+.section-text {
+  text-align: center; }
+
+.section-leftAlignedText {
+  text-align: left; }
+
+.section-normalGallery {
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 230px; }
+
+.section-bigGallery {
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 270px; }
+
+.section-smallGallery {
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 150px; }
+
+.container-section-gallery-item {
+  width: 100%;
+  height: 100%; }
+
+.section-gallery-item {
+  width: 25%;
+  text-align: center;
+  vertical-align: bottom;
+  color: white; }
+
+.section-gallery-item:hover {
+  border: solid 0.5px white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px white;
+  cursor: pointer; }
+
+.section-bigGallery-item {
+  width: 33%;
+  text-align: center;
+  vertical-align: bottom; }
+
+.section-smallGallery-item {
+  width: 33%; }
+
+.beijing-background {
+  background: no-repeat;
+  background-image: url("../../images/beijing.png");
+  background-size: 70%;
+  background-position: 50% 10%; }
+
+.xian-background {
+  background: no-repeat;
+  background-image: url("../../images/xian.png");
+  background-size: 80%;
+  background-position: 50% 10%; }
+
+.chengdu-background {
+  background: no-repeat;
+  background-image: url("../../images/chengdu.png");
+  background-size: 55%;
+  background-position: 50% 20%; }
+
+.wuhan-background {
+  background: no-repeat;
+  background-image: url("../../images/wuhan.png");
+  background-size: 50%;
+  background-position: 50% 15%; }
+
+.book-refactor-background {
+  background: no-repeat;
+  background-image: url("../../images/book-refactor.png");
+  background-size: 60%;
+  background-position: 50% 50%; }
+
+.book-js-background {
+  background: no-repeat;
+  background-image: url("../../images/book-js.png");
+  background-size: 60%;
+  background-position: 50% 50%; }
+
+.book-lean-background {
+  background: no-repeat;
+  background-image: url("../../images/book-lean.png");
+  background-size: 60%;
+  background-position: 50% 50%; }
+
+.book-measurement-background {
+  background: no-repeat;
+  background-image: url("../../images/book-measurement.png");
+  background-size: 60%;
+  background-position: 50% 50%; }
+
+.book-anthology-background {
+  background: no-repeat;
+  background-image: url("../../images/book-anthology.png");
+  background-size: 60%;
+  background-position: 50% 50%; }
+
+.book-mobile-background {
+  background: no-repeat;
+  background-image: url("../../images/book-mobile.png");
+  background-size: 60%;
+  background-position: 50% 50%; }
+
+.p1-background {
+  background: no-repeat;
+  background-image: url("../../images/p1.png");
+  background-size: 60%;
+  background-position: 50% 20%; }
+
+.p2-background {
+  background: no-repeat;
+  background-image: url("../../images/p2.png");
+  background-size: 50%;
+  background-position: 50% 20%; }
+
+.p3-background {
+  background: no-repeat;
+  background-image: url("../../images/p3.png");
+  background-size: 60%;
+  background-position: 50% 20%; }
+
+@media (max-width: 1200px) {
+  .gallery-RESP {
+    height: auto; }
+
+  .gallery-item-container-RESP {
+    height: auto; }
+
+  .gallery-item-RESP {
+    width: 100%;
+    height: 60px;
+    display: block;
+    padding-top: 200px;
+    vertical-align: inherit; }
+
+  .beijing-background-RESP {
+    background-size: 160px; }
+
+  .xian-background-RESP {
+    background-size: 160px; }
+
+  .chengdu-background-RESP {
+    background-size: 120px; }
+
+  .wuhan-background-RESP {
+    background-size: 120px; }
+
+  .p1-background-RESP {
+    background-size: 160px; }
+
+  .p2-background-RESP {
+    background-size: 130px; }
+
+  .p3-background-RESP {
+    background-size: 150px; } }
+.section-hugeWhitespace {
+  margin-top: 200px; }
+
+.section-veryLargeWhitespace {
+  margin-top: 150px; }
+
+.section-largeWhitespace {
+  margin-top: 100px; }
+
+.section-bigWhitespace {
+  margin-top: 60px; }
+
+.section-normalWhitespace {
+  margin-top: 50px; }
+
+.section-mediumWhitespace {
+  margin-top: 40px; }
+
+.section-smallWhitespace {
+  margin-top: 20px; }
+
+.section-tinyWhitespace {
+  margin-top: 10px; }
+
+.section-hugeHorizontalWhitespace {
+  margin-left: 18%;
+  margin-right: 18%; }
+
+@media (max-width: 1200px) {
+  .pairProgrammingSection {
+    height: 1200px; } }
+@media (max-width: 1200px) {
+  .myActivitySection {
+    height: 1950px; } }
+@media (max-width: 1200px) {
+  .missionSection {
+    height: 1270px; } }

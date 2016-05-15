@@ -1,0 +1,17 @@
+@mixin section-picture {
+  background: no-repeat;
+  background-size: contain;
+  background-position-x: 52%;
+}
+
+.section-mediumPicture {
+  @include section-picture;
+  height: 130px;
+}
+
+.section-bigPicture {
+  @include section-picture;
+  height: 200px;
+}
+
+@import "../../backgrounds/sectionPictureBackgrounds";

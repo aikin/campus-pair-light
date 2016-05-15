@@ -1,0 +1,27 @@
+.section-entry {
+  height: 200px;
+  width: 100%;
+}
+
+.section-entry-icon {
+  width: 30%;
+}
+
+.section-entry-icon-caption {
+  float: right;
+  width: 200px;
+  text-align: center;
+}
+
+.section-entry-text {
+  width: 80%;
+  padding-left: 40px;
+}
+
+.section-entry-text-content {
+  width: 75%;
+}
+
+@import "../../../backgrounds/sectionEntryBackgrounds";
+
+@import "section-entry_responsive";

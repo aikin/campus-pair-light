@@ -1,0 +1,48 @@
+.navBar {
+  height: 40px;
+  padding-top: 15px;
+
+  background-color: white;
+  position: fixed;
+  width: 100%;
+}
+
+.container-navBar-item {
+  float: right;
+  margin-right: 5%;
+}
+
+@mixin navBar-item {
+  display: inline-block;
+  width: 105px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 20px;
+
+  text-align: center;
+  cursor: pointer;
+}
+
+@mixin animatedFadeOut {
+  transition-duration: 0.2s;
+  opacity: 0.9;
+}
+
+.navBar-normalItem {
+  @include navBar-item;
+  color: #8e8e8e;
+}
+.navBar-normalItem:hover {
+  @include animatedFadeOut;
+}
+
+.navBar-purpleFramedItem {
+  @include navBar-item;
+  color: #CB6B93;
+  border: solid 1px #CB6B93;
+}
+.navBar-purpleFramedItem:hover {
+  transition-duration: 0.2s;
+  color: white;
+  background-color: #CB6B93;
+}

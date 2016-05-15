@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>chengdu</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+
+    <link rel="stylesheet" href="../stylesheet/normalize.css">
+    <link rel="stylesheet" href="../stylesheet/main.css">
+    <link rel="stylesheet" href="../stylesheet/jquery.modal.min.css">
+    <link rel="stylesheet" href="../stylesheet/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../stylesheet/city-detail.css">
+
+</head>
+<body>
+
+<div class="container">
+    <section class="parallax">
+        <div class="parallax-wrapper">
+            <img src="../images/chengdu/game-pair-in-chengdu.png" class="parallax-wrapper__content">
+        </div>
+    </section>
+
+    <section class="parallax-content">
+        <div class="parallax-wrapper heroes-show">
+            <div class="heroes-wall">
+                <ul id="container" class="tiles-wrap">
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, Python, Java</a>
+                        </div>
+                        <img id="lvjing" src="../images/chengdu/lvjing.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, C#, Java</a>
+                        </div>
+                        <img id="zhaxi" src="../images/chengdu/zhaxi.jpeg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, Ruby, JavaScript</a>
+                        </div>
+                        <img id="bear" src="../images/chengdu/bear.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="auto-hover ghost-btn-line-frame__content">JavaScript</a>
+                        </div>
+                        <img id="weizhaoyu"  src="../images/chengdu/weizhaoyu.jpeg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, Ruby</a>
+                        </div>
+                        <img id="zhaoming" src="../images/chengdu/zhaoming.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, Python, Javascript</a>
+                        </div>
+                        <img id="dengyunlong" src="../images/chengdu/dengyunlong.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">前端 etc.</a>
+                        </div>
+                        <img id="chengjia" src="../images/chengdu/chengjia.png">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">C&C++, Java, C#</a>
+                        </div>
+                        <img id="linshuiqiang" src="../images/chengdu/linshuiqiang.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, Python, Java</a>
+                        </div>
+                        <img id="liujiefeng" src="../images/chengdu/liujiefeng.jpeg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, Python, Java</a>
+                        </div>
+                        <img id="huangbowen" src="../images/chengdu/huangbowen.png">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, Java</a>
+                        </div>
+                        <img id="dingmengli" src="../images/chengdu/dingmengli.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Swift, Objective-C, Elixir</a>
+                        </div>
+                        <img id="fuluoyu" src="../images/chengdu/fuluoyu.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Android</a>
+                        </div>
+                        <img id="louli" src="../images/chengdu/louli.jpg">
+                    </li>
+                </ul>
+            </div>
+            <div class="hero-show">
+                <div class="detail"></div>
+                <div class="submit hide">
+                    <a href="#" class="submit__content">报名&提交</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+<div id="intro-modal" class="modal" style="display:none;">
+    <p></p>
+</div>
+
+<script type="text/javascript" src="../lib/modernizr.js"></script>
+<script type="text/javascript" src="../lib/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="../lib/wookmark.min.js"></script>
+<script type="text/javascript" src="../lib/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="../lib/jquery.modal.min.js"></script>
+<script type="text/javascript" src="../lib/perfect-scrollbar.jquery.min.js"></script>
+<script type="text/javascript" src="../js/start.js"></script>
+<script type="text/html" id="hero-lvjing">
+    <div class="intro">
+        <pre><code>let techStack = ['JavaScript', 'Python', 'Java'];
+let me = {
+  name: '吕靖',
+  nickName: '立青 & Jimmy',
+  myThoughtWorks: 'ThoughtWorks，影响程序员，引领软件行业，就是改变整个世界！',
+  say: '你过去所经历的__，和你将来想要实现的__，共同成就了现在的你。'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/UcVY2z" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-zhaxi">
+    <div class="intro">
+        <pre><code>let techStack = ['JavaScript', 'Nodejs', 'C#', 'Java', 'Python'];
+let me = {
+  name: '格茸扎西',
+  nickName: '狼主',
+  myThoughtWorks: ' At ThoughtWorks，your ideas come true',
+  say: 'Talk is cheap，show me the code'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/eLOqIZ" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-bear">
+    <div class="intro">
+        <pre><code>let techStack = ['Java', 'Ruby', 'JavaScript'];
+let me = {
+  name: 'Aleksandar Serafimoski',
+  nickName: 'Bearclaw',
+  myThoughtWorks: 'ThoughtWorks is a very special place. There is a lot of fun smart people and you get to work with them every day. You can learn a lot while having fun!',
+  say: 'Join ThoughtWorks, so you can meet a lot of cool people and travel to many interesting places!'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/0xPJxr" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-weizhaoyu">
+    <div class="intro">
+        <pre><code>let techStack = ['JavaScript'];
+let me = {
+  name: '魏兆玉',
+  nickName: 'Zhaoyu',
+  myThoughtWorks: '追求技术卓越，追求社会公正',
+  say: '日精进'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/oAeArh" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-zhaoming">
+    <div class="intro">
+        <pre><code>let techStack = ['Java', 'Ruby'];
+let me = {
+  name: '赵明',
+  nickName: '小明',
+  myThoughtWorks: '给予自己负责的原则，做你想做的事情',
+  say: '编程有益身心健康'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/2h2sbO" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-chengjia">
+    </div>
+    <div class="intro">
+        <pre><code>let techStack = ['前端 etc.'];
+let me = {
+  name: '陈嘉',
+  nickName: 'areschen',
+  myThoughtWorks: 'ThoughtWorks，where thought works',
+  say: '加入ThoughtWorks，成就你的梦想！'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/xknwMz" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-linshuiqiang">
+    <div class="intro">
+        <pre><code>let techStack =  ['C&C++', 'Java', 'C#'];
+let me = {
+  name: '林水强',
+  nickName: 'Waterstrong',
+  myThoughtWorks: 'ThoughtWorks, 一个来了就会爱上的地方。',
+  say: '满腔热血的少年们，加入ThoughtWorks成就你的非凡！'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/Ae8fvZ" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-dengyunlong">
+    <div class="intro">
+        <pre><code>let techStack = ['Java', 'Python', 'Javascript'];
+let me = {
+  name: '郑云龙',
+  nickName: '云龙',
+  myThoughtWorks: 'ThoughtWorks的特产：干货！',
+  say: '这里有无限可能！'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/9dEEP4" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-dingmengli">
+    <div class="intro">
+        <pre><code>let techStack = ['JS', 'Java'];
+let me = {
+  name: '丁梦力',
+  nickName: 'Power',
+  myThoughtWorks: '有激情，有技术的精英聚集地！',
+  say: '骚窝，温暖，温情，快到碗里来！'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/0xPJxr" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-fuluoyu">
+    <div class="intro">
+        <pre><code>let techStack = ['iOS', 'Objective-C', 'Swift', 'Elixir以及函数式的blabla'];
+let me = {
+  name: '傅若愚',
+  nickName: '这家伙很懒，什么都没有留下……其实也没那么懒啦，只是个爱睡懒觉爱喝啤酒的17岁小鲜肉啦。艺名什么的，真的没有啊……',
+  myThoughtWorks: '一个可以让你得到真正成长的地方。',
+  say: '小伙伴们快来一起愉快地玩耍！'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/uKIh2B" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-huangbowen">
+    <div class="intro">
+        <pre><code>let techStack =  ['Java', 'C#'JavaScript];
+let me = {
+  name: '黄博文',
+  myThoughtWorks: 'ThoughtWorks助你成就非凡使命',
+  say: 'Today I will do what others won't! So tomorrow I can accomplish what others can't!'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/UcVY2z" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-liujiefeng">
+    <div class="intro">
+        <pre><code>let techStack = ['Python', 'Javascript'];
+let me = {
+  name: '刘杰凤',
+  nickName: '姐夫',
+  myThoughtWorks: '很多活动，很多挑战，很多机会。',
+  say: '来来来，写代码～'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/uKIh2B" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-louli">
+    <div class="intro">
+        <pre><code>let techStack = ['Android开发'];
+let me = {
+  name: '罗丽',
+  nickName: 'LOLI',
+  myThoughtWorks: '这是片思维迸发的沃土。',
+  say: '我只希望自己遇见骚窝的时候, 也是你们这般年纪。'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/ipf270" class="submit__content">报名&提交</a>
+    </div>
+</script>
+</body>
+</html>

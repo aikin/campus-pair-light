@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>xian</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+
+    <link rel="stylesheet" href="../stylesheet/normalize.css">
+    <link rel="stylesheet" href="../stylesheet/main.css">
+    <link rel="stylesheet" href="../stylesheet/jquery.modal.min.css">
+    <link rel="stylesheet" href="../stylesheet/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="../stylesheet/city-detail.css">
+
+</head>
+<body>
+
+<div class="container">
+    <section class="parallax">
+        <div class="parallax-wrapper">
+            <img src="../images/xian/game-pair-in-xian.png" class="parallax-wrapper__content">
+        </div>
+    </section>
+
+    <section class="parallax-content">
+        <div class="parallax-wrapper heroes-show">
+            <div class="heroes-wall">
+                <ul id="container" class="tiles-wrap">
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, CSS, Java</a>
+                        </div>
+                        <img id="fanwenbo" src="../images/xian/fanwenbo.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">JavaScript, CSS, Java</a>
+                        </div>
+                        <img id="fengxiaowu" src="../images/xian/fengxiaowu.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, Ruby, Clojure</a>
+                        </div>
+                        <img id="maochao" src="../images/xian/maochao.png">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="auto-hover ghost-btn-line-frame__content">Java, .Net</a>
+                        </div>
+                        <img id="wangni" src="../images/xian/wangni.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, React</a>
+                        </div>
+                        <img id="zhuxueliang" src="../images/xian/zhuxueliang.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, JavaScript, Android</a>
+                        </div>
+                        <img id="yangmengmeng" src="../images/xian/yangmengmeng.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Scheme, Python, Javascript</a>
+                        </div>
+                        <img id="yanli" src="../images/xian/yanli.jpg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, Ruby, Javascript</a>
+                        </div>
+                        <img id="zhangjian" src="../images/xian/zhangjian.jpg">
+
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, React</a>
+                        </div>
+                        <img id="larry" src="../images/xian/larry.jpeg">
+                    </li>
+                    <li class="hero--tint">
+                        <div class="ghost-btn-line-frame">
+                            <a href="#" class="ghost-btn-line-frame__content">Java, React</a>
+                        </div>
+                        <img id="zhouqing" src="../images/xian/zhouqing.jpg">
+                    </li>
+                </ul>
+            </div>
+            <div class="hero-show">
+            </div>
+
+        </div>
+    </section>
+</div>
+<div id="intro-modal" class="modal" style="display:none;">
+    <p></p>
+</div>
+
+<script type="text/javascript" src="../lib/modernizr.js"></script>
+<script type="text/javascript" src="../lib/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="../lib/wookmark.min.js"></script>
+<script type="text/javascript" src="../lib/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="../lib/jquery.modal.min.js"></script>
+<script type="text/javascript" src="../lib/perfect-scrollbar.jquery.min.js"></script>
+<script type="text/javascript" src="../js/start.js"></script>
+
+<script type="text/html" id="hero-fanwenbo">
+    <div class="intro">
+        <pre><code>let techStack = ['Javascript', 'Java', 'Ruby', 'C', 'SQL', 'Android'];
+let me = {
+  name: '范文博',
+  nickName: '饭勺',
+  myThoughtWorks: require('coding-world'),
+  say: console.log.bind(console)
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/UcVY2z" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-fengxiaowu">
+    <div class="intro">
+        <pre><code>let techStack = ['JavaScript', 'html','css', 'Java'];
+let me = {
+  name: '封小武',
+  nickName: '小5',
+  myThoughtWorks: '我司有着开放的公司文化，卓越的技术实力，专业的客户服务，值得优秀的年轻人加入。',
+  say: 'Just do it'
+};</code></pre>
+
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/eLOqIZ" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-maochao">
+    <div class="intro">
+        <pre><code>let techStack = ['JavaScript', 'Ruby', 'C#', 'Java'];
+let me = {
+  name: '毛超',
+  nickName: '毛P',
+  myThoughtWorks: '全栈工程师的摇篮',
+  say: '别犹豫了，来玩玩吧'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/xknwMz" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-wangni">
+    <div class="intro">
+        <pre><code>let techStack = ['Java', 'Ruby', 'JavaScript'];
+let me = {
+  name: '王妮',
+  nickName: '王老师',
+  myThoughtWorks: '我把工作想象成了一种结束，事实上，它是一个美妙的开始',
+  say: 'Don't stop improving yourself'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/oAeArh" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-yangmengmeng">
+    <div class="intro">
+        <pre><code>let techStack = ['JavaScript', 'Ruby', 'ReactJS'];
+let me = {
+  name: '杨萌蒙',
+  nickName: '二萌',
+  myThoughtWorks: '在TW可以很开心的写代码，还可以干自己喜欢干的事情。',
+  say: '在TW可以成为不一样的自己。'
+};</code></pre>
+
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/ipf270" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-yanli">
+    <div class="intro">
+        <pre><code>let techStack = ['Java', 'Ruby'];
+let me = {
+  name: '阎昱',
+  nickName: 'YY',
+  myThoughtWorks: 'TW像国外的大学，大家聚在一起，一起学习，一起研究，一起做项目。',
+  say: '用代码说话。'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/2h2sbO" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-zhangjian">
+    <div class="intro">
+        <pre><code>let techStack = ['iOS', 'Kotlin'];
+let me = {
+  name: '张舰',
+  nickName: '三疯',
+  myThoughtWorks: '只能说，在这里可以开心的工作。',
+  say: '一起Coding，一起火锅，一起唱着歌。哈'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/Ae8fvZ" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-zhuxueliang">
+    <div class="intro">
+        <pre><code>let techStack = ['iOS', 'Swift', 'Objective-C', 'Kotlin'];
+let me = {
+  name: '朱学亮',
+  nickName: '饭勺',
+  myThoughtWorks: '一群热爱的技术的萌萌的程序猿/媛在一个萌萌的公司里~',
+  say: '欢迎来到这个富有激情的窝~'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/0xPJxr" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-zhouqing">
+    <div class="intro">
+        <pre><code>let techStack = ['QA', 'Debug'];
+let me = {
+  name: '周清',
+  nickName: 'ThoughtWorks的第八个(debug)男人',
+  myThoughtWorks: '不按套路出牌的男人, 尽在ThoughtWorks。',
+  say: '快来一起结对玩新技术, 包教包会, 可能还会包分配~~~'
+};</code></pre>
+
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/uKIh2B" class="submit__content">报名&提交</a>
+    </div>
+</script>
+<script type="text/html" id="hero-larry">
+    <div class="intro">
+        <pre><code>let techStack = ['文', '武', '各种技术'];
+let me = {
+  name: 'Larry',
+  nickName: '拉瑞',
+  myThoughtWorks: 'ThoughtWorks, 充满中国风。',
+  say: '憋等了, 快来一起结对编程吧, 沟通方面, 中文英文随你挑~'
+};</code></pre>
+    </div>
+    <div class="submit">
+        <a href="https://jinshuju.net/f/9dEEP4" class="submit__content">报名&提交</a>
+    </div>
+</script>
+</body>
+</html>

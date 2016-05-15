@@ -1,0 +1,28 @@
+@media (max-width: 1200px) {
+  .section-entry-icon {
+    width: 100%;
+    display: block;
+    height: 190px;
+  }
+
+  .section-entry-text {
+    width: auto;
+    display: block;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .section-entry-icon-caption {
+    float: none;
+    width: 5%;
+    height: 190px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  @import "../../../backgrounds/sectionEntryBackgrounds_responsive";
+
+  .section-entry-text-content {
+    width: 100%;
+  }
+}

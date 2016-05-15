@@ -1,0 +1,37 @@
+@mixin noMarginCollapse {
+  padding-top: 1px;
+  margin-top: -1px;
+}
+
+@mixin section {
+  @include noMarginCollapse;
+  background-repeat: no-repeat;
+}
+
+
+.tinySection {
+  @include section;
+  height: 280px;
+}
+
+.smallSection {
+  @include section;
+  height: 600px;
+}
+
+.mediumSection {
+  @include section;
+  height: 700px;
+}
+
+.bigSection {
+  @include section;
+  height: 800px;
+}
+
+.hugeSection {
+  @include section;
+  height: 1300px;
+}
+
+@import "../backgrounds/sectionBackgrounds";

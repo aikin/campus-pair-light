@@ -1,0 +1,29 @@
+@media (max-width: 1200px) {
+  .section-largeEntry-icon {
+    display: block;
+    width: 100%
+  }
+
+  .section-largeEntry-icon-img {
+    float: none;
+    width: 100%;
+  }
+
+  .section-largeEntry-text {
+    display: block;
+    width: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 40px;
+  }
+
+  .section-largeEntry-text {
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .section-largeEntry-text {
+    padding-top: 120px;
+  }
+}

@@ -1,0 +1,19 @@
+.section-largeEntry {
+  height: 300px;
+  width: 100%;
+}
+
+.section-largeEntry-icon {
+  width: 48%;
+}
+
+.section-largeEntry-icon-img {
+  float: right;
+}
+
+.section-largeEntry-text {
+  width: 52%;
+  padding-left: 7%;
+}
+
+@import "section-largeEntry_responsive";

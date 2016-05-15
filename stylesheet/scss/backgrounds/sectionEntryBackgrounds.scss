@@ -1,0 +1,30 @@
+@mixin section-entry-icon-background{
+  background: no-repeat;
+  background-size: contain;
+  background-position: 100% 0;
+}
+
+.activity-one-icon {
+  @include section-entry-icon-background;
+  background-image: url('../../images/activity-one.png');
+}
+
+.activity-two-icon {
+  @include section-entry-icon-background;
+  background-image: url('../../images/activity-two.png');
+}
+
+.activity-three-icon {
+  @include section-entry-icon-background;
+  background-image: url('../../images/activity-three.png');
+}
+
+.activity-four-icon {
+  @include section-entry-icon-background;
+  background-image: url('../../images/activity-four.png');
+}
+
+.activity-five-icon {
+  @include section-entry-icon-background;
+  background-image: url('../../images/activity-five.png');
+}

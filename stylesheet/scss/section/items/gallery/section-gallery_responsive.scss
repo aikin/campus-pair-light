@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {
+  .gallery-RESP {
+    height: auto;
+  }
+  .gallery-item-container-RESP {
+    height: auto;
+  }
+
+  .gallery-item-RESP {
+    width: 100%;
+    height: 60px;
+    display: block;
+    padding-top: 200px;
+
+    vertical-align: inherit;
+  }
+
+  @import "../../../backgrounds/sectionGalleryBackgrounds_responsive";
+}
