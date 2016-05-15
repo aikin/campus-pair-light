@@ -37,6 +37,9 @@ body {
 a {
   text-decoration: none; }
 
+a:focus {
+  outline: none; }
+
 .navBar {
   height: 40px;
   padding-top: 15px;
@@ -328,7 +331,8 @@ a {
   vertical-align: bottom; }
 
 .section-smallGallery-item {
-  width: 33%; }
+  width: 33%;
+  text-align: center; }
 
 .beijing-background {
   background: no-repeat;
@@ -356,37 +360,37 @@ a {
 
 .book-refactor-background {
   background: no-repeat;
-  background-image: url("../../images/book-refactor.png");
+  background-image: url("../../images/books/book-refactor.png");
   background-size: 60%;
   background-position: 50% 50%; }
 
 .book-js-background {
   background: no-repeat;
-  background-image: url("../../images/book-js.png");
+  background-image: url("../../images/books/book-js.png");
   background-size: 60%;
   background-position: 50% 50%; }
 
 .book-lean-background {
   background: no-repeat;
-  background-image: url("../../images/book-lean.png");
+  background-image: url("../../images/books/book-lean.png");
   background-size: 60%;
   background-position: 50% 50%; }
 
 .book-measurement-background {
   background: no-repeat;
-  background-image: url("../../images/book-measurement.png");
+  background-image: url("../../images/books/book-measurement.png");
   background-size: 60%;
   background-position: 50% 50%; }
 
 .book-anthology-background {
   background: no-repeat;
-  background-image: url("../../images/book-anthology.png");
+  background-image: url("../../images/books/book-anthology.png");
   background-size: 60%;
   background-position: 50% 50%; }
 
 .book-mobile-background {
   background: no-repeat;
-  background-image: url("../../images/book-mobile.png");
+  background-image: url("../../images/books/book-mobile.png");
   background-size: 60%;
   background-position: 50% 50%; }
 
@@ -407,6 +411,17 @@ a {
   background-image: url("../../images/p3.png");
   background-size: 60%;
   background-position: 50% 20%; }
+
+.image-popup-no-margins img {
+  width: 60%; }
+
+a.image-popup-no-margins:hover {
+  opacity: .9; }
+
+.image-popup-no-margins {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in; }
 
 @media (max-width: 1200px) {
   .gallery-RESP {
