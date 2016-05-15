@@ -23,6 +23,9 @@
   position: relative;
   bottom: 12px; }
 
+.text-bold {
+  font-weight: bold; }
+
 body {
   background-color: white;
   font-family: STHeiTi, SimHei; }
