@@ -1,4 +1,4 @@
-window.Parallax = function(config, backgroundContainerSelector) {
+window.Parallax = function(config, backgroundContainerSelector, customWindowOffsets) {
     var backgroundContainer = $(backgroundContainerSelector);
     backgroundContainer.css('background-size', 'contain');
     backgroundContainer.css('background-repeat', 'no-repeat');
@@ -9,7 +9,7 @@ window.Parallax = function(config, backgroundContainerSelector) {
             parallax();
         }
     }, 10);
-    
+
     $(window).scroll(parallax);
 
     function parallax(){
@@ -53,9 +53,17 @@ window.Parallax = function(config, backgroundContainerSelector) {
 
     function calcSectionVisibility(sectionPos, sectionHeight) {
         var sectionVanishOffset = -sectionHeight;
-        var sectionOffset = sectionPos - $(window).scrollTop();
+        var sectionOffset = sectionPos - getWindowTopPos();
 
-        var sectionProgress = (sectionOffset - sectionVanishOffset) / (sectionHeight + $(window).height());
+        var sectionProgress = (sectionOffset - sectionVanishOffset) / (sectionHeight + getWindowHeight());
         return 1 - sectionProgress;
+    }
+
+    function getWindowTopPos() {
+      return $(window).scrollTop() + customWindowOffsets.windowTopOffset;
+    }
+
+    function getWindowHeight() {
+      return $(window).height() - customWindowOffsets.windowBottomOffset;
     }
 };
