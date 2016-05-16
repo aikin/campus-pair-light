@@ -12,17 +12,17 @@ window.Parallax = function(config, backgroundContainerSelector, customWindowOffs
 
     $(window).scroll(parallax);
 
-    function parallax(){
-        var sectionConfigs = _.map(config, readConfig);
+    $(window).resize(parallax);
 
-        var urls = _.chain(sectionConfigs).map(function(config){
-            return 'url("' + config._pictureUrl + '")';
+    function parallax(){
+        var urls = _.chain(config).map(function(config){
+            return 'url("' + config.pictureUrl + '")';
         }).join(', ').value();
 
         backgroundContainer.css('background-image', urls);
 
 
-        var yPositions = _.chain(sectionConfigs).map(function(config){
+        var yPositions = _.chain(config).map(function(config){
             var picturePos = calcPicturePos(config);
 
             return Math.floor(picturePos) + 'px';
@@ -32,23 +32,14 @@ window.Parallax = function(config, backgroundContainerSelector, customWindowOffs
         backgroundContainer.css('background-position-y', yPositions);
     }
 
-    function readConfig(config) {
-        var _sectionSelector = config.section;
-        var _pictureUrl = config.pictureUrl;
-        var _picHeight = config.pictureHeight;
-        var _picWidth = config.pictureWidth;
-
-        var _pictureHeight = (_picHeight / _picWidth) * backgroundContainer.width();
-        return {_sectionSelector: _sectionSelector, _pictureUrl: _pictureUrl, _pictureHeight: _pictureHeight};
-    }
-
     function calcPicturePos(config) {
-        var section = $(config._sectionSelector);
+        var section = $(config.section);
         var sectionPos = section.offset().top;
         var sectionHeight = section.height();
         var sectionVisibility = calcSectionVisibility(sectionPos, sectionHeight);
 
-        return sectionPos - sectionVisibility * (config._pictureHeight - sectionHeight);
+        var sectionAnimatedDistance = calcSectionAnimatedDistance(config, sectionPos, sectionHeight, sectionVisibility);
+        return sectionPos - sectionVisibility * sectionAnimatedDistance;
     }
 
     function calcSectionVisibility(sectionPos, sectionHeight) {
@@ -65,5 +56,19 @@ window.Parallax = function(config, backgroundContainerSelector, customWindowOffs
 
     function getWindowHeight() {
       return $(window).height() - customWindowOffsets.windowBottomOffset;
+    }
+
+    function getPictureHeight(config) {
+      var _picHeight = config.pictureHeight;
+      var _picWidth = config.pictureWidth;
+      return (_picHeight / _picWidth) * backgroundContainer.width();
+    }
+
+    function calcSectionAnimatedDistance(config, sectionPos, sectionHeight, sectionVisibility) {
+      var sectionAnimatedDistance = getPictureHeight(config) - sectionHeight;
+      if(sectionAnimatedDistance < 0) {
+        return 0;
+      }
+      return sectionAnimatedDistance;
     }
 };
